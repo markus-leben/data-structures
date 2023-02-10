@@ -17,8 +17,8 @@ var stackMethods = {
     this.storage[this.size()] = value;
   },
   pop: function() {
-    var toReturn = this.storage[this.size()-1];
-    delete this.storage[this.size()-1];
+    var toReturn = this.storage[this.size() - 1];
+    delete this.storage[this.size() - 1];
     return toReturn;
   },
 };

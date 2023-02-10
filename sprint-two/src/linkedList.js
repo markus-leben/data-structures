@@ -16,10 +16,9 @@ var LinkedList = function() {
     // if the tail is not null
     if (list.tail !== null) {
       list.tail.next = newNode;
-    }
-    else { // if tail is null head will always also be null
+    } else { // if tail is null head will always also be null
       list.head = newNode;
-    };
+    }
     // update tail to be the node
     list.tail = newNode;
   };
@@ -40,7 +39,7 @@ var LinkedList = function() {
     if (list.head === null) {
       // make the tail null too (cause your list is empty)
       list.tail = null;
-    };
+    }
     // return the return value
     return oldHeadValue;
   };
@@ -52,7 +51,6 @@ var LinkedList = function() {
     // E: nah, everything null shouldn't be an edge for once
 
     // make a variable 'current' and set it equal to the head
-    debugger;
     let current = list.head;
     // while current isn't null
     while (current !== null) {

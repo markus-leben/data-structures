@@ -6,7 +6,7 @@ var Stack = function() {
 
   // Use an object with numeric keys to store values
   // I'm just gonna put storage in from the start
-  var someInstance = {'storage':{}};
+  var someInstance = {'storage': {}};
 
 
   // Implement the methods below
@@ -22,10 +22,10 @@ var Stack = function() {
     //O: The value that's one less than the size of the dictionary, and also remove that key from the dictionary
 
     // put the last element in a storage variable
-    var toReturn = someInstance.storage[someInstance.size()-1];
+    var toReturn = someInstance.storage[someInstance.size() - 1];
 
     // then delete the last element
-    delete someInstance.storage[someInstance.size()-1];
+    delete someInstance.storage[someInstance.size() - 1];
     return toReturn;
   };
 
